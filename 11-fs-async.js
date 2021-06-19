@@ -1,4 +1,5 @@
 const {readFile, writeFile} = require('fs')
+console.log('Starting with asynchronous Task')
 // using call back methods
 readFile('./file/filesRW/first.txt','utf8',(err, result)=>{
     if(err){
@@ -22,7 +23,8 @@ readFile('./file/filesRW/first.txt','utf8',(err, result)=>{
                    console.log(err) 
                    return
                 }
-                console.log(result)
+                console.log('Done with asynchronous task')
            }) 
     })
 })
+console.log('Ready for the next task')
